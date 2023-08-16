@@ -1,7 +1,6 @@
 import pandas as pd 
 import matplotlib.pyplot as plt 
 import matplotlib.ticker as ticker
-# from matplotlib.backends.backend_pdf import PdfPages 
 import requests 
 import io 
 from datetime import date 
@@ -9,11 +8,8 @@ from datetime import date
 
 
 #a list containing the links you want to download from (they must be in csv form)
+relevant_data = [""]
 
-relevant_data = ["https://www.ons.gov.uk/generator?format=csv&uri=/economy/nationalaccounts/balanceofpayments/timeseries/l87s/mret",
-                 "https://www.ons.gov.uk/generator?format=csv&uri=/economy/nationalaccounts/balanceofpayments/timeseries/l87u/mret",
-                 "https://www.ons.gov.uk/generator?format=csv&uri=/economy/nationalaccounts/balanceofpayments/timeseries/l87m/mret",
-                 "https://www.ons.gov.uk/generator?format=csv&uri=/economy/nationalaccounts/balanceofpayments/timeseries/l87o/mret"]
 date_today = date.today()
 
 
